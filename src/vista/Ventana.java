@@ -219,7 +219,7 @@ public class Ventana extends javax.swing.JFrame {
            
        }else{
            
-           Jugador jugador = Tail.Peek();
+           Jugador jugador = Tail.Pop();
            
            this.txtJugadorSalido.setText(jugador.getNickname());
            
