@@ -10,7 +10,7 @@ public class Jugador {
     private String nickname;
 
     
-    private int edad;
+
     
     public Jugador() {
 
