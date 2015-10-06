@@ -83,6 +83,40 @@ public class Cola {
        return tamaño;
         
     }
+
+    public Nodo getPrimero() {
+        return primero;
+    }
+
+    public void setPrimero(Nodo primero) {
+        this.primero = primero;
+    }
+
+    public Nodo getUltimo() {
+        return ultimo;
+    }
+
+    public void setUltimo(Nodo ultimo) {
+        this.ultimo = ultimo;
+    }
+
+    public int getTamaño() {
+        return tamaño;
+    }
+
+    public void setTamaño(int tamaño) {
+        this.tamaño = tamaño;
+    }
+    
+    
+     public void limpiarCola(){
+        
+        
+        while(!estaVacia()){
+            Pop();
+            
+        }
+    }
     
     
 }
