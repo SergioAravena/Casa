@@ -87,6 +87,11 @@ public class Ventana extends javax.swing.JFrame {
         });
 
         btnVaciarLista.setText("VaciarListadeJugadores");
+        btnVaciarLista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVaciarListaActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Ingreso");
 
@@ -246,6 +251,30 @@ public class Ventana extends javax.swing.JFrame {
            
        }
     }//GEN-LAST:event_btnJugadorSalidaActionPerformed
+
+    private void btnVaciarListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVaciarListaActionPerformed
+       
+        
+          
+        DefaultTableModel model = (DefaultTableModel)this.tabIngresoJugador.getModel();
+           
+     if(Tail.tamaño()<=0){
+         
+         javax.swing.JOptionPane.showMessageDialog(this, "no hay jugadores en la lista ");
+     }else{
+        Tail.Pop();
+        model.removeRow(0);
+        
+     }
+        
+        
+      
+      
+        
+     
+        
+        
+    }//GEN-LAST:event_btnVaciarListaActionPerformed
 
     /**
      * @param args the command line arguments
